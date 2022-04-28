@@ -32,6 +32,24 @@ button {
     font-family: inherit;
 }
 
+/* RESET */
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 1px solid tomato;
+}
+
 /* удаление маркеров списка */
 .list {
     list-style: none;
