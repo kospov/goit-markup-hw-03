@@ -73,7 +73,7 @@ address {
 .container {
     width: 1200px;
     padding: 0 15px;
-    margin: 0 auto;}
+    margin: 0 auto;
 }
 
 .section-title {
@@ -87,10 +87,13 @@ address {
 
 /* HEADER */
 
+.header {
+        border-bottom: 1px solid #ECECEC;
+}
+
 .header .container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .header .contacts:last-child {
@@ -175,13 +178,14 @@ address {
 /* HERO */
 
 .hero {
-    background-color: var(--logo-second-part);
-    text-align: center;
-}
-
-.hero.container {
     padding-top: 200px;
     padding-bottom: 200px;
+
+    background-color: var(--logo-second-part);
+}
+
+.hero .container {
+   text-align: center;
 }
 
 .hero-title {
@@ -214,7 +218,12 @@ address {
 
 /* FEATURES */
 
+.list.features {
+    display: flex;
+}
+
 .section-title.features {
+    width: 270px;
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -223,12 +232,8 @@ address {
     text-transform: uppercase;
 }
 
-.section .list.features {
-    display: flex;
-}
-
 .section .item.features:not(:last-child) {
-    margin-right: 30px;    
+    margin-right: 30px;
 }
 
 .text.features {
